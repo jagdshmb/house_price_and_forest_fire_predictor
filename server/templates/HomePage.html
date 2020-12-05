@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {box-sizing: border-box}
+body {font-family: Verdana, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
+/* Header/Logo Title */
+.header {
+  padding: 1px;
+  text-align: center;
+  background: #1abc9c;
+  color: white;
+  font-size: 20px;
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width: 650px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+body, html {
+  height: 100%;
+}
+</style>
+<title>Predictor</title>
+</head>
+<body>
+  <div class="header">
+    <h1 style ="font-size: 25px;">JSS SCIENCE AND TECHNOLOGY UNIVERSITY , MYSURU</h1>
+    <p style="font-size: 20px;">Linear Algebra and its Application</p>
+  </div>
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+  
+    <form action = "app.html" method="POST" >
+      <input type="image" src="static/house.jpg" style="width:100%; height:100%;">
+    </form>
+  </div>
+
+<div class="mySlides fade">
+  
+  <form action = "forest1.html" method="POST" >
+    <input type="image" src="static/forest.jpg" style="width:100%; height:100%;">
+  </form>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<section>
+  <nav>
+    <p>Under the guidance of</p>
+    <h2>Anitha S prasad</h2>
+    <p1>Assistant Professor,</p1>
+    <p2>JSSSTU(SJCE), Mysuru</p2>
+  </nav>
+  <article>
+    <table style="width:100%">
+      <tr>
+        <th>Name</th>
+        <th>USN No.</th>
+        <th>Roll No.</th>
+      </tr>
+      <tr>
+        <td>Jagadeesh M B</td>
+        <td>01JST18EC043</td>
+        <td>21</td>
+      </tr>
+      <tr>
+        <td>Adithi K raj</td>
+        <td>01JST18EC110</td>
+        <td>55</td>
+      </tr>
+    </table>
+  </article>
+</section>
+<script>
+var slideIndex = 0;
+showSlides();
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html> 
