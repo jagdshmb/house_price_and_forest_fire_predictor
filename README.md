@@ -21,8 +21,9 @@ occurance in the forest of a particular region.
 1. House price prediction dataset --> [Kaggle website](https://www.kaggle.com/amitabhajoy/bengaluru-house-price-data)
 2. Forest fire prediction dataset --> [Created own data set](https://github.com/jagdshmb/house_price_and_forest_fire_predictor/blob/a9fcdf6edf8d54ffd1e332c74072f0219c993639/model/Forest_fire.csv)
 
-## Text stack used:
-1. Python
-2. HTML
-3. CSS
-4. JavaScript
+## Text stack & Packages used:
+1. Python (3.6.5)
+2. HTML (UI)
+3. CSS (UI)
+4. JavaScript (UI to Python  and viceversa)
+5. Flask (Web Framework)
